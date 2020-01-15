@@ -1,0 +1,17 @@
+kind: pipeline
+name: default
+workspace:
+  base: /tmp
+  path: "."
+  
+steps:
+- name: build
+  image: maven:3-jdk-8
+  commands:
+    - "mvn package -B" 
+
+- name: publish  
+  image: plugins/ecr
+  settings:
+    repo: suraksha
+    registry: 847370586410.dkr.ecr.us-east-1.amazonaws.com
