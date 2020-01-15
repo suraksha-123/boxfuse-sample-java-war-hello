@@ -17,8 +17,8 @@ steps:
     registry: 847370586410.dkr.ecr.us-east-1.amazonaws.com
     
 - name: deploy 
-  image: joshdvir/drone-ecs-deploy
+  image: sailthru/sailthru-drone-eks
   cluster: terraform-eks-demo
-  service: my-service
-  image_name: suraksha:latest
+  #service: my-service
+  image_name: 847370586410.dkr.ecr.us-east-1.amazonaws.com/suraksha:latest
   aws_region: us-west-2
