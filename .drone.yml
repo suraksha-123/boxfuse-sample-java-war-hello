@@ -13,5 +13,5 @@ steps:
 - name: publish  
   image: plugins/ecr
   settings:
-    repo: drone
-    registry: 847370586410.dkr.ecr.us-west-2.amazonaws.com
+    repo: suraksha
+    registry: 847370586410.dkr.ecr.us-east-1.amazonaws.com
