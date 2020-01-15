@@ -5,13 +5,9 @@ workspace:
   path: "."
   
 steps:
-- name: build
-  image: maven:3-jdk-8
-  commands:
-    - "mvn package -B" 
-
-- name: publish  
-  image: plugins/ecr
-  settings:
-    repo: suraksha
-    registry: 847370586410.dkr.ecr.us-east-1.amazonaws.com
+- name: deploy 
+  image: drone-eks-plugin:latest
+  iam_role_arn: arn:aws:iam::847370586410:role/code-deploy
+  eks_cluster: terraform-eks-demo
+  namespace: default
+  repo: 847370586410.dkr.ecr.us-east-1.amazonaws.com/suraksha
