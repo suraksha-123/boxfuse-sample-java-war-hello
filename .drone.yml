@@ -21,4 +21,4 @@ steps:
   cluster: terraform-eks-demo
   service: my-service
   image_name: suraksha:latest
-  aws_region: us-east-1
+  aws_region: us-west-2
