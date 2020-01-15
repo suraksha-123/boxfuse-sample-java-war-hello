@@ -7,7 +7,6 @@ workspace:
 steps:
 - name: deploy 
   image: caian/drone-eks-plugin
-  iam_role_arn: arn:aws:iam::847370586410:role/code-deploy
   cluster: arn:aws:eks:us-west-2:847370586410:cluster/terraform-eks-demo
   repo: 847370586410.dkr.ecr.us-east-1.amazonaws.com/suraksha
   
