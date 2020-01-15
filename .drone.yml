@@ -18,7 +18,7 @@ steps:
     
 - name: deploy 
   image: joshdvir/drone-ecs-deploy
-  cluster: my-cluster
+  cluster: terraform-eks-demo
   service: my-service
   image_name: suraksha:latest
   aws_region: us-east-1
