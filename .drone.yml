@@ -17,8 +17,8 @@ steps:
     registry: 847370586410.dkr.ecr.us-east-1.amazonaws.com
     
 - name: deploy 
-  image: sailthru/sailthru-drone-eks
-  cluster: terraform-eks-demo
-  #service: my-service
-  image_name: 847370586410.dkr.ecr.us-east-1.amazonaws.com/suraksha:latest
-  aws_region: us-west-2
+  image: caian/drone-eks-plugin
+  aws_region: us-east-1
+  iam_role_arn: arn:aws:iam::847370586410:role/code-deploy
+  cluster: arn:aws:eks:us-west-2:847370586410:cluster/terraform-eks-demo
+  repo: 847370586410.dkr.ecr.us-east-1.amazonaws.com/suraksha
