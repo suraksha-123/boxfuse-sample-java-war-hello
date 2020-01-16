@@ -18,6 +18,6 @@ steps:
 
 - name: deploy 
   image: image: omerxx/drone-lambda-plugin
-  repo: 847370586410.dkr.ecr.us-east-1.amazonaws.com/suraksha
-  function_name: drone
+  #repo: 847370586410.dkr.ecr.us-east-1.amazonaws.com/suraksha
+  #function_name: drone
   
