@@ -15,9 +15,9 @@ steps:
   settings:
     repo: suraksha
     registry: 847370586410.dkr.ecr.us-east-1.amazonaws.com
-
-- name: deploy 
-  image: image: omerxx/drone-lambda-plugin
-  #repo: 847370586410.dkr.ecr.us-east-1.amazonaws.com/suraksha
-  #function_name: drone
+ 
+ - name: deploy 
+   image: omerxx/drone-lambda-plugin
+   repo: 847370586410.dkr.ecr.us-east-1.amazonaws.com/suraksha
+   function_name: drone
   
